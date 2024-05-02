@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('../hotel_serkom/assets/img/hotel-indigo-vancouver-8594654469-2x1.avif');
+            background-size: cover;
+            /* This will make sure the image covers the entire background */
+            background-repeat: no-repeat;
+            padding-top: 50px;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            /* Semi-transparent white background */
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .form-button {
+            text-align: center;
+        }
+
+        .btn-primary,
+        .btn-success,
+        .btn-danger {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+        .btn-success:hover {
+            background-color: #218838;
+            border-color: #218838;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #c82333;
+        }
+    </style>
+</head>
+<!-- form pemesanan -->
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Form Pemesanan</h1>
+            <form id="bookingForm" action="simpan_pemesanan.php" method="post">
+                <div class="form-group">
+                    <label for="namaPemesan">Nama Pemesan</label>
+                    <input type="text" class="form-control" id="namaPemesan" placeholder="Enter name"
+                        name="namaPemesan">
+                </div>
+                <div class="form-group">
+                    <label>Jenis Kelamin</label>
+                    <div>
+                        <input type="radio" id="laki" name="jenisKelamin" value="Laki-Laki">
+                        <label for="laki">Laki-Laki</label>
+                        <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="nomorIdentitas">Nomor Identitas</label>
+                    <input type="text" class="form-control" id="nomorIdentitas" placeholder="Enter 16 digit number"
+                        name="nomorIdentitas">
+                </div>
+                <div class="form-group">
+                    <label for="tipeKamar">Tipe Kamar</label>
+                    <select class="form-control" id="tipeKamar" name="tipeKamar">
+                        <option value="standar">Standar</option>
+                        <option value="deluxe">Deluxe</option>
+                        <option value="family">Family</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tanggalPesan">Tanggal Pesan</label>
+                    <input type="date" class="form-control" id="tanggalPesan" name="tanggalPesan" />
+                </div>
+                <div class="form-group">
+                    <label for="durasiMenginap">Durasi Menginap</label>
+                    <input type="text" class="form-control" id="durasiMenginap" placeholder="Enter number of days"
+                        name="durasiMenginap">
+                </div>
+                <div class="form-group">
+                    <label for="breakfast">Termasuk Breakfast</label>
+                    <input type="checkbox" id="breakfast" name="breakfast">
+                </div>
+                <div class="form-group">
+                    <label for="totalBayar">Total Bayar</label>
+                    <input type="text" class="form-control" id="totalBayar" readonly name="totalBayar">
+                </div>
+                <div class="form-button">
+                    <button type="button" class="btn btn-primary mr-3" id="hitungTotal">Hitung Total Bayar</button>
+                    <button type="submit" class="btn btn-success mr-3" id="simpan" name="simpan">Simpan</button>
+                    <a href="../hotel_serkom" class="btn btn-danger">Batal</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Include Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Custom JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

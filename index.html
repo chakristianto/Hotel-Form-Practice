@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Hotel Indigo</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/Hotel_Indigo_Logo_Artwork.png" rel="icon">
+  <link href="assets/img/Hotel_Indigo_Logo_Artwork.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding-top: 50px;
+    }
+
+    /* Custom Button Style */
+    .custom-button {
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .custom-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <!-- <h1 class="logo"><a href="index.html">Java Heritage</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+
+      <a href="index.html" class="logo"><img src="assets/img/Hotel_Indigo_Logo_Artwork.png" alt=""></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Rooms</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Pricelist</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
+          <li><a class="nav-link scrollto book-btn" href="book.html">Book</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <h1>Welcome to <span>Hotel Indigo</span></h1>
+      <h2>The best hotel in town.</h2>
+      <div class="d-flex">
+        <a type="button" class="btn-get-started scrollto" data-toggle="modal" data-target="#exampleModal">Book now</a>
+        <a href="https://www.youtube.com/watch?v=-w2I2EtQygQ" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Rooms</h2>
+          <h3>Check our <span>Rooms</span></h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae
+            autem.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Standar</li>
+              <li data-filter=".filter-card">Deluxe</li>
+              <li data-filter=".filter-web">Family</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div id="junior" class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/kamar/standar.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Standar</h4>
+              <!-- <p>App</p> -->
+              <a href="assets/img/kamar/standar.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Junior"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div id="executive" class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/kamar/family.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Family</h4>
+              <!-- <p>Executive
+
+              </p> -->
+              <a href="assets/img/kamar/family.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Executive"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/kamar/standar1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Standar</h4>
+              <!-- <p>Junior</p> -->
+              <a href="assets/img/kamar/standar1.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Junior"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div id="premium" class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/kamar/deluxe.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Deluxe</h4>
+              <!-- <p>Premium</p> -->
+              <a href="assets/img/kamar/deluxe.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Premium"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/kamar/family1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Family</h4>
+              <!-- <p>Executive
+
+              </p> -->
+              <a href="assets/img/kamar/family1.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Executive"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/kamar/standar2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Standar</h4>
+              <!-- <p>Junior</p> -->
+              <a href="assets/img/kamar/standar2.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Junior"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/kamar/deluxe1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Deluxe</h4>
+              <!-- <p>Premium</p> -->
+              <a href="assets/img/kamar/deluxe1.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Premium"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/kamar/deluxe2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Deluxe</h4>
+              <!-- <p>Premium</p> -->
+              <a href="assets/img/kamar/deluxe2.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Premium"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/kamar/family2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Family</h4>
+              <!-- <p>Executive
+
+              </p> -->
+              <a href="assets/img/kamar/family2.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Executive"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricelist</h2>
+          <h3>Check our <span>Pricelist</span></h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae
+            autem.</p>
+        </div>
+
+        <div class="row justify-content-center"> <!-- Menggunakan justify-content-center untuk membuat rata tengah -->
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Standar</h3>
+              <h4><sup>Rp</sup>300K<span> / malam</span></h4>
+              <ul>
+                <img src="assets/img/kamar/standar.jpg" class="img-fluid" alt="">
+              </ul>
+              <div class="btn-wrap">
+                <a href="book.html" class="btn-buy">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>Deluxe</h3>
+              <h4><sup>Rp</sup>500K<span> / malam</span></h4>
+              <ul>
+                <img src="assets/img/kamar/deluxe.jpg" class="img-fluid" alt="">
+              </ul>
+              <div class="btn-wrap">
+                <a href="book.html" class="btn-buy">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <h3>Family</h3>
+              <h4><sup>Rp</sup>900K<span> / malam</span></h4>
+              <ul>
+                <img src="assets/img/kamar/family.jpg" class="img-fluid" alt="">
+              </ul>
+              <div class="btn-wrap">
+                <a href="book.html" class="btn-buy">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- </section> -->
+    <!-- End Frequently Asked Questions Section -->
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>About</h2>
+          <h3>Find Out More <span>About Us</span></h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae
+            autem.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up"
+            data-aos-delay="100">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+            <ul>
+              <li>
+                <i class="bx bx-store-alt"></i>
+                <div>
+                  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
+                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                </div>
+              </li>
+              <li>
+                <i class="bx bx-images"></i>
+                <div>
+                  <h5>Magnam soluta odio exercitationem reprehenderi</h5>
+                  <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
+                </div>
+              </li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact" style="background-color: #f8f9fa;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
+          <h3><span>We Are Here For You!</span></h3>
+          <p>Get in touch with us for any inquiries or assistance.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <a
+                href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7912.895943484576!2d109.23436224460605!3d-7.415571145681824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655e84ad3c0569%3A0x2cfa539df756942c!2sJava%20Heritage%20Hotel%20Purwokerto!5e0!3m2!1sid!2sid!4v1714323300130!5m2!1sid!2sid">
+                <i class="bx bx-map" style="color: #007bff;"></i>
+              </a>
+              <h3>Our Address</h3>
+              <p style="color: #6c757d;">Jl. Camplung Tanduk No.10, Seminyak, Bali, Kabupaten Badung, Bali
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope" style="color: #007bff;"></i>
+              <h3>Email Us</h3>
+              <p style="color: #6c757d;">contact@idghotel.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call" style="color: #007bff;"></i>
+              <h3>Call Us</h3>
+              <p style="color: #6c757d;">001-803-016-0061</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Form Pemesanan</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="bookingForm" action="simpan_pemesanan.php" method="post">
+              <div class="form-group">
+                <label for="namaPemesan">Nama Pemesan</label>
+                <input type="text" class="form-control" id="namaPemesan" placeholder="Enter name" name="namaPemesan">
+              </div>
+              <div class="form-group row">
+                <label class="col-md-2 col-form-label">Jenis Kelamin</label>
+                <div class="col-md-10">
+                  <input type="radio" id="laki" name="jenisKelamin" value="Laki-Laki">
+                  <label for="laki">Laki-Laki</label>
+                  <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+                  <label for="perempuan">Perempuan</label><br>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="nomorIdentitas" class="col-md-2 col-form-label">Nomor Identitas</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="nomorIdentitas" placeholder="Enter 16 digit number"
+                    name="nomorIdentitas">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="tipeKamar" class="col-md-2 col-form-label">Tipe Kamar</label>
+                <div class="col-md-10">
+                  <select class="form-control" id="tipeKamar" name="tipeKamar">
+                    <option value="standar">Standar</option>
+                    <option value="deluxe">Deluxe</option>
+                    <option value="family">Family</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="tanggalPesan" class="col-md-2 col-form-label">Tanggal Pesan</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="tanggalPesan" name="tanggalPesan" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="durasiMenginap" class="col-md-2 col-form-label">Durasi Menginap</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="durasiMenginap" placeholder="Enter number of days"
+                    name="durasiMenginap">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="breakfast" class="col-md-2 col-form-label">Termasuk Breakfast</label>
+                <div class="col-md-10">
+                  <input type="checkbox" id="breakfast" name="breakfast">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="totalBayar" class="col-md-2 col-form-label">Total Bayar</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="totalBayar" readonly name="totalBayar">
+                </div>
+              </div>
+              <div class="form-button">
+                <button type="button" class="btn btn-primary mr-3" id="hitungTotal">Hitung Total Bayar</button>
+                <button type="submit" class="btn btn-success mr-3" id="simpan" name="simpan">Simpan</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <!-- Include Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Include jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Custom JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+  <script src="assets/js/script.js"></script>
+  <!-- Include Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Include jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Custom JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
