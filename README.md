@@ -1,6 +1,6 @@
 # Hotel Booking Form
 
-This website was created as a platform for practicing data insertion into a database
+This website was created as a platform for practicing data insertion into local database
 
 ## Technologies
 
